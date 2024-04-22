@@ -11,7 +11,7 @@ html = response.text
 
 soup = BeautifulSoup(html , 'html.parser')
 
-divv = soup.select(".job-title")
+divv = soup.select("a[ng-href]")
 
 print(divv)
 
